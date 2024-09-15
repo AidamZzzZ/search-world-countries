@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Search for countries using initial or matches"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="World Counttries List" />
+    <meta
+      property="og:description"
+      content="Search for countries using initial or matches"
+    />
+    <meta
+      property="og:image"
+      content="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-icons-png.flaticon.com%2F512%2F326%2F326887.png&f=1&nofb=1&ipt=ae051dd716547bcee2493b0bbd2ab9138533f212bbe26d98e6656c4f90f29ad7&ipo=images"
+    />
+    <meta property="og:image:alt" content="Earth globe" />
+    <title>World Countries List</title>
+    <link
+      rel="icon"
+      href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-icons-png.flaticon.com%2F512%2F326%2F326887.png&f=1&nofb=1&ipt=ae051dd716547bcee2493b0bbd2ab9138533f212bbe26d98e6656c4f90f29ad7&ipo=images"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <header id="#header">
+      <h1>WORLD COUNTRIES LIST</h1>
+      <p class="subtitle"></p>
+      <p class="counting"></p>
+      <fieldset>
+        <div class="button">
+          <input
+            type="checkbox"
+            class="button-st"
+            id="button-st"
+            name="button"
+            value="STARTING WORD"
+            autocomplete="off"
+          />
+          <label class="lbl-swith" for="button-st">STARTING WORD</label>
+        </div>
+        <div class="button">
+          <input
+            type="checkbox"
+            class="button-order"
+            id="button-order"
+            name="button"
+            value="order"
+            autocomplete="off"
+          />
+
+          <label class="lbl-swith" for="button-order"
+            ><img
+              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-icons-png.flaticon.com%2F512%2F28%2F28558.png&f=1&nofb=1&ipt=553cc5d8f45607553490b1c9915a786692df47ab29a63119edcf79b429df9003&ipo=images"
+              alt="rows"
+              width="15px"
+          /></label>
+        </div>
+        <div>
+          <input
+            type="text"
+            class="search"
+            id="search"
+            name="search"
+            placeholder="Search Country..."
+            required
+          />
+          <label for="search"
+            ><img src="/images/search.png" class="search-img" alt="search"
+          /></label>
+        </div>
+      </fieldset>
+    </header>
+    <main>
+      <div class="wrapper"></div>
+    </main>
+    <script src="./data/countries.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
