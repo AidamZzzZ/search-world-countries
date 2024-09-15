@@ -211,7 +211,7 @@ const counting = document.querySelector(".counting");
 // DIV FATHER
 const divFather = document.querySelector(".wrapper");
 
-// funcion
+// FUNCTION
 function countriesList(arr) {
   for (let key in arr) {
     let div = document.createElement("div");

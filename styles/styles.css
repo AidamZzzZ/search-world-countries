@@ -1,3 +1,4 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -8,8 +9,10 @@
 
 body {
   background-color: #f1f1f1;
+  margin: 0 auto;
 }
 
+/* HEADER */
 header {
   background-image: linear-gradient(180deg, rgb(153, 187, 234), transparent),
     linear-gradient(0deg, rgb(153, 187, 234), transparent),
@@ -26,20 +29,12 @@ header {
   text-align: center;
 }
 
-input[type="text"]:focus {
-  outline: none;
-}
-
 h1 {
   font-size: 50px;
   margin-bottom: 20px;
 }
 p {
   font-weight: bold;
-}
-
-.counting {
-  margin: 15px auto 15px auto;
 }
 
 h1,
@@ -52,47 +47,12 @@ fieldset {
   width: 100%;
 }
 
-.button {
-  display: inline-block;
+/* APPLY COUNT */
+.counting {
+  margin: 15px auto 15px auto;
 }
 
-.lbl-swith {
-  display: inline-block;
-  background: rgb(68, 68, 231);
-  padding: 10px;
-  color: #fff;
-  font-weight: 500;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.button-st,
-.button-order {
-  display: none;
-}
-
-.button-st:checked ~ .lbl-swith,
-.button-order:checked ~ .lbl-swith {
-  background: rgb(57, 16, 163);
-}
-
-.search {
-  border-radius: 10px;
-  padding: 10px;
-  width: 30%;
-}
-
-.search-img {
-  width: 30px;
-  margin: 10px auto auto 12px;
-}
-
-.filter {
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-
+/* COUNTRIES SECTION */
 .wrapper {
   display: flex;
   /* justify-content: center; */
@@ -116,4 +76,50 @@ fieldset {
   width: 150px;
   height: 150px;
   border: 1px solid;
+}
+
+/* BUTTON */
+.lbl-swith {
+  display: inline-block;
+  background: rgb(68, 68, 231);
+  padding: 10px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+.button {
+  display: inline-block;
+}
+
+.button-st,
+.button-order {
+  display: none;
+}
+
+.button-st:checked ~ .lbl-swith,
+.button-order:checked ~ .lbl-swith {
+  background: rgb(57, 16, 163);
+}
+
+/* SEARCH INPUTT */
+.search {
+  border-radius: 10px;
+  padding: 10px;
+  width: 30%;
+}
+
+.search-img {
+  width: 30px;
+  margin: 10px auto auto 12px;
+}
+
+/* FILTER */
+.filter {
+  display: none;
 }
