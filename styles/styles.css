@@ -123,3 +123,17 @@ input[type="text"]:focus {
 .filter {
   display: none;
 }
+
+/* RESPONSIVE */
+@media (max-width: 769px) {
+  .wrapper {
+    justify-content: space-between;
+  }
+  .countrie {
+    width: 45%;
+    height: 100px;
+  }
+  .search {
+    width: 50%;
+  }
+}
