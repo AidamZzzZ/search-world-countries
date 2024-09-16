@@ -227,7 +227,7 @@ search.addEventListener("keyup", (e) => {
   let count = 0;
   document.querySelectorAll(".countrie").forEach((element) => {
     let value = element.textContent.toLowerCase();
-    let valueTwo = value.includes(e.target.value);
+    let valueTwo = value.includes(e.target.value.toLowerCase());
     if (valueTwo) {
       element.classList.remove("filter");
       count++;
@@ -241,7 +241,7 @@ search.addEventListener("keyup", (e) => {
     count = 0;
     document.querySelectorAll(".countrie").forEach((element) => {
       let value = element.textContent.toLowerCase();
-      let valueTwo = value.startsWith(e.target.value);
+      let valueTwo = value.startsWith(e.target.value.toLowerCase());
       if (valueTwo) {
         element.classList.remove("filter");
         count++;
